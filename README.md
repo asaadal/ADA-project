@@ -53,3 +53,20 @@ Search for correlation between topics, language and perception inferred by the t
 
 # Questions for TAs
 Add here some questions you have for us, in general or project-specific.
+
+# Update for Milestone 2
+In milestone, we did the following:
+Descriptive analysis of the data.
+Investigation of the monthly, daily and hourly IRA tweet activity.
+Topic modeling initiation.
+Polarity and sentiment analysis initiation.
+
+## Plan for Milestone 3
+Reiterate over the topic modeling and sentiment analysis by running on specific time periods.
+Topic modeling: investigate results with stemming vs lemmatization
+Sentiment analysis: Test different models/architectures to get better results.
+Build a classifier to recognize tweets from IRA users vs non-IRA users. To do so, we will need the appropriate non-IRA tweets. We will either filter big twitter datasets or mine our own dataset.
+We may extend the classifier to distinguish between IRA accounts and non-IRA accounts.
+
+Develop the story.
+
