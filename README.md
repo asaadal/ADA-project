@@ -1,16 +1,16 @@
 # Title
-The disruptive strategy of the IRA tweets.  
+Twitter trolls strategy to disrupt democracy. 
 
 # Abstract
 Social media went from exciting to being ingrained in our societies and its influence exceeded the personal sphere to attain even our legal framework and political institutions. The question of regulating social networks is currently a hot topic especially with the rise of the concept of cyber warfare and what that entails in terms of disruption and propaganda. It is therefore very important to study how social media can be used to create narratives and tip the scales into one way or the other. In particular, the Internet Research Agency, a Russian troll factory was accused of interfering in multiple foreign political processes like the the 2016 US presidential elections. We dispose of a dataset of roughly 3 millions tweets spanned between 2012 and 2018 related to accounts of this agency. The aim is to understand what these tweets focus on and how do they adapt with respect to major political and politically divisive events.   
 
 # Research questions
 Through this project we want to address the following questions:  
-How does the troll tweets activity evolve with respect to the reality?  
-Is there a correlation between the stakes of a political/social event (elections, confirmation hearing, shooting..) and the troll activity?  
-What are the most discussed topics and do they match the timeline of events?  
-How does the degree of intensity of a given sentiment change according to the topic?  
-What is the impact of positive and negative tweets on the relevant events?  
+How does the troll tweets activity evolve with respect to the events? 
+What are the most discussed Russian topics and do they match the timeline of events?  
+What's the difference between the Russian and Iranian trolls in terms of topics, hashtags etc ?
+Can we classify the unlabeled Russian trolls data based on the previous labeled one ?
+
 Starting from the aforementioned questions we might add new evaluations and studies according to the insights we will get from the data.
 
 # Dataset
@@ -36,7 +36,10 @@ Header | Definition
 `account_category` | General account theme, as coded by Linvill and Warren
 `new_june_2018` | A binary indicator of whether the handle was newly listed in June 2018
 
-We are focused on the tweets in English and we may extend to other languages on a later stage. The periods of time we're interested in coincide with major political and major politically devasive events.
+We are focused on the tweets in English. The periods of time we're interested in coincide with major political and major politically devasive events.
+
+We also used the troll data released by Twitter in October consisting of roughly 10 million tweets traced back to the IRA and the Iranian govermennt.
+Lastly, we gathered 1.8 million tweets from the twitter internet archive on the hdfs. We filtered 150 Gb of tweets from August 2017 based on a small list of generic politically related words. 
 
 
 # A list of internal milestones up until project milestone 2
@@ -61,12 +64,17 @@ Investigation of the monthly, daily and hourly IRA tweet activity.
 Topic modeling initiation.
 Polarity and sentiment analysis initiation.
 
-## Plan for Milestone 3  
-Reiterate over the topic modeling and sentiment analysis by running on specific time periods.  
-Topic modeling: investigate results with stemming vs lemmatization  
-Sentiment analysis: Test different models/architectures to get better results.  
-Build a classifier to recognize tweets from IRA users vs non-IRA users. To do so, we will need the appropriate non-IRA tweets. We will either filter big twitter datasets or mine our own dataset.   
-We may extend the classifier to distinguish between IRA accounts and non-IRA accounts.  
+# Update Milestone 3  
+Data story has the following scheme:  
+Russian trolls data exploration  
+Tweets activity  
+Topic extraction before, during and after the compaign for the FiveThirtyEight Russian trolls' data, Iranian trolls' data and general public's data  
+Classification of troll category
 
-Develop the story.  
+# Contributions 
+Ahmed: Data story, Exploratory analysis, tweets activity, data fetching.
+Jessica: Topic extraction and discussion.
+Neeraj: Running classifier, hashtags-category matching, cleaning notebook.
 
+Link to data story: https://ada-asjl.github.io/
+Repo data story: https://github.com/ADA-ASJL/ADA-ASJL.github.io
